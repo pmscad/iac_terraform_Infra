@@ -1,4 +1,10 @@
 terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws
+      }
+  }
+
   backend "remote" {
     organization = "Qinetiq_Orion"
 
